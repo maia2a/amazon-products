@@ -157,7 +157,7 @@ This project is licensed under the **MIT License** - see the [LICENSE](LICENSE) 
 
 ## Credits
 
-Created with ❤️ by [Your Name]  
+Created with ❤️ by [Gabriell Maia do Amaral Duarte]  
 Based on concepts from:
 
 - [Bun.js Documentation](https://bun.sh/docs)
