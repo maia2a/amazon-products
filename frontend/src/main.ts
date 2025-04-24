@@ -9,11 +9,18 @@ document.addEventListener("DOMContentLoaded", () => {
 
     try {
       const response = await fetch(
-        `/api/scrape?keyword=${encodeURIComponent(keyword)}`
+        `http://localhost:3000/api/scrape?keyword=${encodeURIComponent(
+          keyword
+        )}`
       );
-      const data = await response.json();
+      const data: {
+        title: string;
+        price: string;
+        link: string;
+        image: string;
+      }[] = await response.json();
       resultDiv.innerHTML = "<h2>Results:</h2>";
-      data.forEach((product: any) => {
+      data.forEach((product) => {
         resultDiv.innerHTML += `
         <div>
           <h3>${product.title}</h3>
